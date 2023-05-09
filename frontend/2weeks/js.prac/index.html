@@ -90,16 +90,20 @@
       }
     </style>
     <script>
+      // $(document).ready(function () {코드})
+      // 자동으로 실행되는 내용
       $(document).ready(function () {
         fetch("http://spartacodingclub.shop/sparta_api/weather/seoul")
           .then((res) => res.json())
           .then((data) => {        
-            console.log(data)    
-            let temp = data['temp']
+            // console.log(data)    
+            // let temp = data['temp']
 
-            $('#temp').empty()
-            let temp_html = `<span>${temp}</span>`
-            $('#temp').append(temp_html)
+            // $('#temp').empty()
+            // let temp_html = `<span>${temp}</span>`
+            // $('#temp').append(temp_html)
+            let number = data['temp']
+            $('#temp').text(number)
           });
       });
     </script>
