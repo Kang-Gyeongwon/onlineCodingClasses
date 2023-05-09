@@ -95,16 +95,16 @@
       $(document).ready(function () {
         fetch("http://spartacodingclub.shop/sparta_api/weather/seoul")
           .then((res) => res.json())
-          .then((data) => {
-            let number = data["temp"];
-            $("#temp").text(number);
+          .then((data) => {        
+            let number = data['temp']
+            $('#temp').text(number)
           });
-        fetch("http://spartacodingclub.shop/web/api/movie")
+          fetch("http://spartacodingclub.shop/web/api/movie")
           .then((res) => res.json())
-          .then((data) => {
+          .then((data) => {        
             let rows = data['movies']
-           
-           $("#cards").empty()
+            $('#cards').empty()
+            
             rows.forEach(a => {
               let title = a['title']
               let desc = a['desc']
@@ -115,21 +115,21 @@
               let star_image = '⭐'.repeat(star)
 
               let temp_html = `<div class="col">
-                                <div class="card h-100">
-                                  <img
-                                    src="${image}"
-                                    class="card-img-top"
-                                    alt="..."
-                                  />
-                                  <div class="card-body">
-                                    <h5 class="card-title">${title}</h5>
-                                    <p class="card-text">${desc}</p>
-                                    <p>${star_image}</p>
-                                    <p class="mycomment">${comment}</p>
+                                  <div class="card h-100">
+                                    <img
+                                      src="${image}"
+                                      class="card-img-top"
+                                      alt="..."
+                                    />
+                                    <div class="card-body">
+                                      <h5 class="card-title">${title}</h5>
+                                      <p class="card-text">${desc}</p>
+                                      <p>${star_image}</p>
+                                      <p class="mycomment">${comment}</p>
+                                    </div>
                                   </div>
-                                </div>
-                              </div>`
-              $("#cards").append(temp_html)
+                                </div>`
+              $('#cards').append(temp_html)
             })
           });
       });
