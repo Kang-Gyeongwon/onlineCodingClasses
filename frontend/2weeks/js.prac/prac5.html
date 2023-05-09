@@ -10,11 +10,29 @@
       div.question-box {
         margin: 10px 0 20px 0;
       }
+      .bad {
+        color: red;
+      }
     </style>
 
     <script>
       function q1() {
-        // 여기에 코드를 입력하세요
+        fetch("http://spartacodingclub.shop/sparta_api/seoulair").then((res) => res.json()).then((data) => {
+            let rows = data['RealtimeCityAir']['row']
+            rows.forEach((a) => {
+              let gu_name = a['MSRSTE_NM']
+              let gu_mise = a['IDEX_MVL']
+
+              $('#name-q1').empty()
+              let temp_html= `` 
+              if (gu_mise > 40) {
+                temp_html = `<li class="bad">${gu_name} : ${gu_mise}</li>`
+              } else {
+                temp_html = `<li>${gu_name} : ${gu_mise}</li>`
+              }
+              $('#names-q1').append(temp_html)
+            })
+          });
       }
     </script>
   </head>
