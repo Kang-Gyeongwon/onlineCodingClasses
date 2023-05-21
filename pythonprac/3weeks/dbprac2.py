@@ -17,5 +17,10 @@ for v in video_list:
   # print(v)
   rank = v.select_one(".rank_num").text
   title = v.select_one(".tit_item").text.strip("\n")
-  rate = v.select_one(".txt_grade").text
-  print(rank, title, rate)
+  star = v.select_one(".txt_grade").text
+  doc = {
+    'title': title,
+    'rank': rank,
+    'star': star
+  }
+  db.movies.insert_one(doc)
