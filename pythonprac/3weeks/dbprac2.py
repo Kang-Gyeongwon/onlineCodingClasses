@@ -23,4 +23,4 @@ for v in video_list:
     'rank': rank,
     'star': star
   }
-  db.movies.insert_one(doc)
+  db.users.insert_one(doc)
