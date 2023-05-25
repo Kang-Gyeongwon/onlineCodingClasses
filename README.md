@@ -139,44 +139,53 @@ window => shift + alt + f    |    mac => shift + option + f
 bootstrap이란?  
 ▶ 예쁜 CSS를 미리 모아둔 것  
 ▶ CSS를 다룰 줄 아는 것과, 미적 감각을 발휘하여 예쁘게 만드는 것은 다르기 때문에 미리 완성된 부트스트랩을 가져다 쓰는 경우가 많음  
-bootstrap 시작 템플릿   
-<!doctype html>  
-<html lang="en">  
-<head>  
-    <meta charset="utf-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"  
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"  
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"  
-        crossorigin="anonymous"></script>  
-    <title></title>  
-</head>  
-<body>  
 부트스트랩 사용하기  
 ▶  부트스트랩을 사용할 파일에 <head> 태그 안에 부트스트랩 링크와 스크립트를 붙여 놓음  
+           
 ▶  부트스트랩에 들어가 원하는 것을 찾음  
+           
 ▶  복사한 내용을 자신이 넣길 원하는 부분에 붙여 넣기 함  
+           
 ⅶ. 웹 페이지 Github를 통해서 배포해 보기  
+           
 Github란?  
+           
 ▶  인터넷에서 코드를 업로드할 수 있는 사이트이며 동시에 이 코드를 배포해서 홈페이지처럼 접속할 수 있음  
+           
 ▶  협업을 할 때 코드를 올려놓을 장소가 필요한데 Github를 이용해서 코드 관리를 많이 함  
+           
 배포하기  
+           
 저장소 생성하기  
+           
 ▶  Create Repository를 선택  
+           
 ▶   public을 선택하고 생성  
+           
 파일 업로드하기
+           
 ▶  Upload Exsiting Files를 선택   
+           
 ▶  finder 혹은 윈도 탐색기에서 index.html, index.js 파일을 드래그 앤 드롭으로 업로드  
+           
 배포하기  
+           
 ▶  저장소에서 settings로 들어감   
+           
 ▶  settings 화면 왼쪽 부분에 page를 찾아서 클릭  
-▶  Deploy from a branch를 선택  
-▶  Branch Name을 main으로 설정하고 save 버튼을 누름  
-▶ 기다렸다가 새로고침 하면 주소가 노출됨  
-※ Github를 통해서 배포할 땐 반드시 파일은 1개여야 하고 파일명은 index.html로 작성  
-수정하기  
+           
+▶  Deploy from a branch를 선택
+           
+▶  Branch Name을 main으로 설정하고 save 버튼을 누름
+           
+▶ 기다렸다가 새로고침 하면 주소가 노출됨
+           
+※ Github를 통해서 배포할 땐 반드시 파일은 1개여야 하고 파일명은 index.html로 작성
+           
+수정하기 
+           
 ▶  code로 들어가서 연필모양을 누름  
-▶  ctrl + a를 해서 전체를 삭제  
+           
+▶  ctrl + a를 해서 전체를 삭제 
+           
 ▶  새로운 코드를 다시 붙여 넣고 Commit changes 누르기  
